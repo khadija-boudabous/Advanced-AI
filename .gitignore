@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.ipynb_checkpoints/
+.vscode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.bin
+*.pkl
+*.pt
+*.pyc
+input.txt
+env/
+.venv/
+.aai_env/
