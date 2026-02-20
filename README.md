@@ -1,9 +1,31 @@
-# Advanced AI Practical Programming Repository
+# ModIA Advanced AI Practical Programming Repository
 
 This repository contains code for practical programming sessions of the Advanced AI course. Each directory corresponds to a session. It will be updated along the semester with code for each session, including exercises and sample solutions.
 
+## Repository Setup
 
-## Installation
+First fork this repository to your own GitHub account, then clone it locally
+
+```bash
+git clone your_forked_URL
+```
+
+Then add this repo as a remote to pull updates
+
+```bash
+git remote add upstream https://github.com/paulnovello/Advanced-AI
+```
+
+To update your forked repo with the latest changes from this original repo, run:
+
+```bash
+git fetch upstream
+git merge upstream/main
+```
+
+
+
+## Environment Setup
 
 ### 1. Install uv
 

@@ -1,0 +1,28 @@
+site_name: ModIA Advanced AI
+site_description: ModIA Advanced AI Practical Programming Documentation
+site_url: ""
+
+theme:
+  name: shadcn
+  show_title: true
+  show_stargazers: false
+  icon: assets/INSA-toulouse.jpg
+  custom_dir: docs/overrides
+  topbar_sections: true
+  pygments_style:
+    light: shadcn-light
+    dark: github-dark
+
+nav:
+  - Welcome: index.md
+  - Programming Practicals:
+      - "PP1: GPT-2": practicals/pp1-gpt2.md
+      - "PP2: Placeholder": practicals/pp2-placeholder.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - fenced_code
+  - footnotes
+  - toc:
+      permalink: false
