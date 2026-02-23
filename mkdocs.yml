@@ -1,28 +1,42 @@
 site_name: ModIA Advanced AI
 site_description: ModIA Advanced AI Practical Programming Documentation
-site_url: ""
+site_url: https://paulnovello.github.io/Advanced-AI/
+repo_url: https://github.com/paulnovello/Advanced-AI
+repo_name: paulnovello/Advanced-AI
 
 theme:
-  name: shadcn
-  show_title: true
-  show_stargazers: false
-  icon: assets/INSA-toulouse.jpg
-  custom_dir: docs/overrides
-  topbar_sections: true
-  pygments_style:
-    light: shadcn-light
-    dark: github-dark
+  name: material
+  icon:
+    logo: material/school
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
 
 nav:
   - Welcome: index.md
   - Programming Practicals:
       - "PP1: GPT-2": practicals/pp1-gpt2.md
-      - "PP2: Placeholder": practicals/pp2-placeholder.md
+  - Lecture Notes: lecture_notes.md
 
 markdown_extensions:
   - admonition
-  - codehilite
-  - fenced_code
+  - pymdownx.highlight:
+  - pymdownx.superfences
   - footnotes
   - toc:
-      permalink: false
+      permalink: true

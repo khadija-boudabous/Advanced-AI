@@ -43,9 +43,3 @@ All available command-line options for `sample.py`:
 
 - `--device`: Device to run on (default: `"cpu"`)
   - Examples: `"cpu"`, `"cuda"`, `"cuda:0"`, `"cuda:1"`
-
-- `--dtype`: Data type for computations (default: `"bfloat16"` if available, else `"float16"`)
-  - Options: `"float32"`, `"bfloat16"`, `"float16"`
-
-- `--compile`: Use PyTorch 2.0 compilation for faster inference (default: `False`)
-  - Set to `True` to enable: `--compile=True`

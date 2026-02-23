@@ -8,6 +8,6 @@ student = [
     "transformers>=5.2.0",
 ]
 docs = [
-    "mkdocs-shadcn>=0.5.0",
+    "mkdocs-material>=9.0",
     "pymdown-extensions>=10.0",
 ]
