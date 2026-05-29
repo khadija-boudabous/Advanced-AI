@@ -2,11 +2,11 @@
 
 import torch.nn as nn
 
-
-class ModalityProjector(nn.Module):
+class ModalityProjector(nn.Module):    
+    
     """Student implementation target for the modality projector exercise."""
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self, input_dim, output_dim):
         """Placeholder initializer for the exercise implementation.
 
         Args:
@@ -14,5 +14,11 @@ class ModalityProjector(nn.Module):
             **kwargs: Keyword arguments the student-defined projector may need.
         """
         super().__init__()
+        self.proj = nn.Sequential(
+            nn.Linear(input_dim, output_dim),
+            nn.GELU(),
+            nn.LayerNorm(output_dim),
+        )
 
-    # TODO implement the modality projector.
+    def forward(self, x):
+        return self.proj(x)
